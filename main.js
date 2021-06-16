@@ -17,7 +17,7 @@ var layers = [
     }),
     new TileLayer({
             source: new TileWMS({
-            url: 'https://wms.staging.inspire.geoportail.lu/geoserver/hy/wms',
+            url: 'https://wms.inspire.geoportail.lu/geoserver/hy/wms',
             params: {'LAYERS': 'HY.Network-BDLTC', 'TILED': true},
             serverType: 'geoserver',
             projection : 'EPSG:3035',
