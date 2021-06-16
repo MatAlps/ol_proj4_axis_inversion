@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tiled WMS</title>
+    <!-- Pointer events polyfill for old browsers, see https://caniuse.com/#feat=pointer -->
+    <script src="https://unpkg.com/elm-pep"></script>
+    <style>
+        .map {
+            width: 100%;
+            height:400px;
+        }
+    </style>
+</head>
+<body>
+<div id="map" class="map"></div>
+<div>
+    <h3>Transform</h3>
+    <p>
+    EPSG:4326 [5, 50] transforms to EPSG:3035 [3962799,2999719] on EPSG.io.
+    </p>
+    <p>
+    EPSG:4326 [5, 50] transforms to EPSG:3035 <span id="coordinates"></span> with proj4.
+    </p>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
